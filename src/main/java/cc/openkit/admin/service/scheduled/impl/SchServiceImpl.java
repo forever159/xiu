@@ -13,7 +13,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class SchServiceImpl{
 
-    @Scheduled(cron = "0 45 15 * * ?")
+    @Scheduled(cron = "0 20 15 * * ?")
     public void fixTimeExecution() {
         System.out.print("定时任务执行");
     }
