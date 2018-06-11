@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cc.openkit.admin.dao.SysBaseMapper" >
+  <resultMap id="BaseResultMap" type="cc.openkit.admin.model.SysBase" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="ser_code" property="serCode" jdbcType="VARCHAR" />
+    <result column="ser_name" property="serName" jdbcType="VARCHAR" />
+    <result column="lat" property="lat" jdbcType="VARCHAR" />
+    <result column="lng" property="lng" jdbcType="VARCHAR" />
+    <result column="reg_time" property="regTime" jdbcType="TIMESTAMP" />
+    <result column="manage" property="manage" jdbcType="VARCHAR" />
+    <result column="manage_phone" property="managePhone" jdbcType="VARCHAR" />
+    <result column="sys_admin" property="sysAdmin" jdbcType="VARCHAR" />
+    <result column="reg_way" property="regWay" jdbcType="VARCHAR" />
+    <result column="reg_code" property="regCode" jdbcType="VARCHAR" />
+    <result column="reg_address" property="regAddress" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    id, ser_code, ser_name, lat, lng, reg_time, manage, manage_phone, sys_admin, reg_way, 
+    reg_code, reg_address
+  </sql>
+
+</mapper>
